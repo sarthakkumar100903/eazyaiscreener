@@ -1,15 +1,19 @@
 import React from 'react';
 import { Search, Bell, HelpCircle, Menu, SlidersHorizontal } from 'lucide-react';
+import AppLogo from '../assets/logo.png';
 
-// We accept the 'activeView' prop to know which page is showing
 export default function Navbar({ toggleSidebar, toggleConfigPanel, activeView }) {
   return (
-    <header className="bg-white border-b h-16 flex items-center justify-between px-6 fixed top-0 left-0 right-0 z-40">
-      <div className="flex items-center">
-        <button onClick={toggleSidebar} className="text-gray-500 hover:text-gray-700 mr-4">
+    // Added a more defined border and a soft shadow
+    <header className="bg-white border-b border-gray-200 shadow-sm h-16 flex items-center justify-between px-6 fixed top-0 left-0 right-0 z-40">
+      <div className="flex items-center space-x-4">
+        <button onClick={toggleSidebar} className="text-gray-500 hover:text-gray-700">
           <Menu size={24} />
         </button>
-        <span className="font-semibold text-lg">Your App</span>
+        <div className="flex items-center space-x-2">
+          <img src={AppLogo} alt="EazyAI Logo" className="h-7 w-7" />
+          <span className="font-semibold text-lg text-gray-800">EazyAI</span>
+        </div>
       </div>
       
       <div className="flex-1 max-w-xl mx-4">
@@ -18,20 +22,17 @@ export default function Navbar({ toggleSidebar, toggleConfigPanel, activeView })
           <input
             type="text"
             placeholder="Search..."
-            className="bg-gray-100 rounded-md pl-10 pr-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="bg-gray-100 rounded-md pl-10 pr-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-pink-500"
           />
         </div>
       </div>
       
       <div className="flex items-center space-x-5">
-        {/* This is the conditional rendering logic. */}
-        {/* The button is only included in the output if activeView is 'dashboard'. */}
         {activeView === 'dashboard' && (
           <button onClick={toggleConfigPanel} className="text-gray-500 hover:text-gray-700">
             <SlidersHorizontal size={24} />
           </button>
         )}
-        
         <button className="text-gray-500 hover:text-gray-700">
           <HelpCircle size={24} />
         </button>
