@@ -12,7 +12,7 @@ import streamlit as st
 logger = logging.getLogger(__name__)
 
 # Gmail credentials
-EMAIL = "4352hire111@gmail.com"
+EMAIL = "EAZYhire111@gmail.com"
 PASSWORD = "vdla vduu aepn lbng"  # Your App Password
 IMAP_SERVER = "imap.gmail.com"
 IMAP_PORT = 993

@@ -377,7 +377,7 @@ def render_gmail_sync_status():
         return {}
 
 # Enhanced Header
-st.markdown('<h1 class="main-title">4352AI</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="main-title">EAZYAI</h1>', unsafe_allow_html=True)
 st.markdown('<p class="subtitle">Intelligent Resume Screening Platform</p>', unsafe_allow_html=True)
 
 # Gmail Sync Status (always visible at the top)
@@ -490,7 +490,7 @@ if jd and analyze and not st.session_state["analysis_done"]:
         total = len(blob_files)
         if total == 0:
             st.error("❌ No resume files found in Azure Blob storage container.")
-            st.info("💡 **Tip:** Send resumes (PDF, DOCX, DOC) to **4352ai111@gmail.com** and they will be automatically uploaded!")
+            st.info("💡 **Tip:** Send resumes (PDF, DOCX, DOC) to **EAZYai111@gmail.com** and they will be automatically uploaded!")
             st.stop()
         else:
             file_types = {}
@@ -810,7 +810,7 @@ Our team was impressed with your qualifications and experience, particularly:
 We will be in touch soon with details about the next steps in our selection process.
 
 Best regards,
-4352AI Recruitment Team"""
+EAZYAI Recruitment Team"""
                         
                         elif verdict == "review":
                             subject = f"Application Under Review - {current_role}"
@@ -823,7 +823,7 @@ Your profile is currently under review by our recruitment team. We may need some
 Thank you for your patience during this process.
 
 Best regards,
-4352AI Recruitment Team"""
+EAZYAI Recruitment Team"""
                         
                         else:  # reject
                             subject = f"Application Status Update - {current_role}"
@@ -834,7 +834,7 @@ Thank you for your interest in our {current_role} position. After careful consid
 We appreciate the time you invested in the application process and wish you success in your future endeavors.
 
 Best regards,
-4352AI Recruitment Team"""
+EAZYAI Recruitment Team"""
                         
                         try:
                             with st.spinner("Sending email..."):
@@ -986,7 +986,7 @@ Thank you for your interest in our {current_role} position. After careful consid
 We appreciate the time you invested in the application process and wish you success in your future endeavors.
 
 Best regards,
-4352AI Recruitment Team"""
+EAZYAI Recruitment Team"""
                             
                             try:
                                 if send_email(email_addr, subject, body):
@@ -1240,13 +1240,13 @@ elif not st.session_state["analysis_done"]:
     # Welcome screen with enhanced features
     st.markdown("""
     <div style="text-align: center; padding: 3rem 2rem; background: rgba(30, 42, 58, 0.6); border-radius: 16px; margin: 2rem 0;">
-        <h2>🚀 Welcome to 4352AI Resume Screener</h2>
+        <h2>🚀 Welcome to EAZYAI Resume Screener</h2>
         <p style="font-size: 1.2rem; color: #94a3b8; margin-bottom: 2rem;">
             Streamline your hiring process with AI-powered resume analysis and automated Gmail integration
         </p>
         <div style="background: rgba(0, 212, 255, 0.1); padding: 1.5rem; border-radius: 12px; margin: 2rem 0; border: 1px solid rgba(0, 212, 255, 0.2);">
             <h3>📧 Email Integration Active</h3>
-            <p style="margin-bottom: 1rem;">Send resumes directly to: <strong>4352ai111@gmail.com</strong></p>
+            <p style="margin-bottom: 1rem;">Send resumes directly to: <strong>EAZYai111@gmail.com</strong></p>
             <p style="color: #00d4ff; font-size: 0.9rem;">
                 Supported formats: PDF, DOCX, DOC • Auto-sync every time you open the app
             </p>
@@ -1316,7 +1316,7 @@ elif not st.session_state["analysis_done"]:
     """)
     
     st.markdown("---")
-    st.success("📧 **Gmail Integration**: Send resumes to **4352ai111@gmail.com** - they'll be automatically processed when you run analysis!")
+    st.success("📧 **Gmail Integration**: Send resumes to **EAZYai111@gmail.com** - they'll be automatically processed when you run analysis!")
 
     st.info("👈 **Get Started:** Fill in the job description and configuration options in the sidebar, then click 'Start Analysis' to begin!")
 

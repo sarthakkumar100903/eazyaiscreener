@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - 4352ai-screener-app
+name: Build and deploy Python app to Azure Web App - EAZYai-screener-app
 
 on:
   push:
@@ -66,6 +66,6 @@ jobs:
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: '4352ai-screener-app'
+          app-name: 'EAZYai-screener-app'
           slot-name: 'Production'
           

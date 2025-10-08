@@ -61,7 +61,7 @@ def send_email(to_email: str, subject: str, body: str, from_email: Optional[str]
                 <br><br>
                 <hr>
                 <p style="font-size: 12px; color: #666;">
-                    This email was sent by 4352AI Resume Screener
+                    This email was sent by EAZYAI Resume Screener
                 </p>
             </body>
         </html>
@@ -428,8 +428,8 @@ def send_test_email(test_recipient: str = None) -> bool:
             logger.error(f"Invalid test email recipient: {recipient}")
             return False
         
-        subject = "4352AI Resume Screener - Test Email"
-        body = """This is a test email from 4352AI Resume Screener.
+        subject = "EAZYAI Resume Screener - Test Email"
+        body = """This is a test email from EAZYAI Resume Screener.
 
 If you received this email, the email configuration is working correctly.
 
@@ -439,7 +439,7 @@ Test Details:
 • Sender: {smtp_user}
 
 Best regards,
-4352AI System""".format(**EMAIL_CONFIG)
+EAZYAI System""".format(**EMAIL_CONFIG)
         
         return send_email(recipient, subject, body)
         
