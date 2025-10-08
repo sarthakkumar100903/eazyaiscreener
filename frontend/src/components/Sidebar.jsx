@@ -20,8 +20,8 @@ export default function Sidebar({ isOpen, toggleSidebar, onNavigate }) {
     <aside className={`bg-white text-gray-800 w-64 fixed top-0 left-0 h-full z-50 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out border-r border-gray-200 shadow-lg`}>
       <div className="flex items-center justify-between p-4 border-b h-16">
         <button onClick={() => onNavigate('home')} className="flex items-center space-x-2">
-          <img src={AppLogo} alt="EazyAI Logo" className="h-7 w-7" />
-          <span className="text-lg font-semibold text-gray-800">EazyAI</span>
+          <img src={AppLogo} alt="4352AI Logo" className="h-7 w-7" />
+          <span className="text-lg font-semibold text-gray-800">4352AI</span>
         </button>
         <button onClick={toggleSidebar} className="text-gray-500 hover:text-gray-800">
           <X size={24} />

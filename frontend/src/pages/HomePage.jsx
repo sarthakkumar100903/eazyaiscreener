@@ -53,8 +53,8 @@ export default function HomePage() {
       <section>
         {/* Updated layout to place logo next to the title */}
         <div className="flex items-center justify-center gap-x-6 mb-3">
-          <img src={AppLogo} alt="EazyAI Logo" className="h-16 w-16 flex-shrink-0" />
-          <h1 className="text-4xl font-bold text-gray-800">Welcome to EazyAI</h1>
+          <img src={AppLogo} alt="4352AI Logo" className="h-16 w-16 flex-shrink-0" />
+          <h1 className="text-4xl font-bold text-gray-800">Welcome to 4352AI</h1>
         </div>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto text-center">Streamline your hiring process with our Intelligent Resume Screening Platform.</p> 
       </section>
@@ -67,7 +67,7 @@ export default function HomePage() {
           <h2 className="text-xl font-semibold text-gray-800 mb-2">Email Integration Active</h2>
           <p className="text-gray-600 mb-4">Send resumes directly to the address below. They'll be automatically processed.</p>
           <div className="bg-white p-3 rounded-md border border-gray-300">
-            <p className="font-mono text-blue-800 font-semibold">eazyai111@gmail.com</p> 
+            <p className="font-mono text-blue-800 font-semibold">4352ai111@gmail.com</p> 
           </div>
           <p className="text-xs text-gray-500 mt-3">Supported formats: PDF, DOCX, DOC</p>
         </div>
